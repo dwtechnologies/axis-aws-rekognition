@@ -84,7 +84,7 @@ IoTEndpoint="https://The-AWS-IOT-ENDPOINT"
 ```sh
 RegexMatch=""
 ```
-3. Edit the Make file
+3. Edit the Makefile
 3.1 Set the Artifact S3 bucket that you have permission to upload the lambda artifact to
 ```sh
 ARTIFACTS_BUCKET   =  s3-bucket-to-upload-the-lambda-artifact-for-deploy
@@ -98,7 +98,7 @@ AWS_DEFAULT_REGION ?= eu-west-1
 AWS_PROFILE ?= your-aws-cli-profile
 ```
 
-X. Deploy
+4. Deploy
 ```sh
 make deploy
 ```
