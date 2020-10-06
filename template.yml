@@ -1,0 +1,75 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: 'SAM template for Serverless framework service: '
+Parameters:
+  BucketName:
+    Type: String
+  IoTInputTopic:
+    Type: String
+  IoTOutputTopic:
+    Type: String
+  RegexMatch:
+    Type: String
+  IoTEndpoint:
+    Type: String
+  DeleteS3ObjectsAfterXAmountOfDays:
+    Description: Storage period in days
+    Type: Number
+    Default: 3
+
+Resources:
+  bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+      LifecycleConfiguration:
+        Rules:
+          - Id: DeleteObjectAfterXDays
+            Status: Enabled
+            ExpirationInDays: !Ref DeleteS3ObjectsAfterXAmountOfDays
+  AwsLambdaRekonDevRekon:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: main 
+      Runtime: go1.x
+      CodeUri: >-
+        bin/main.zip
+      MemorySize: 128
+      Timeout: 10
+      Policies:
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - 's3:PutObject'
+                - 's3:GetObject'
+                - 's3:ListBucket'
+                - 's3:ListBucketVersions'
+              Resource: !Sub arn:aws:s3:::${BucketName}/*
+            - Effect: Allow
+              Action:
+                - 'rekognition:*'
+              Resource: '*'
+            - Effect: Allow
+              Action:
+                - 'iot:Publish'
+                - 'iot:Connect'
+              Resource: '*'
+
+
+      Environment:
+        Variables:
+          S3_OUTPUT_BUCKET: !Ref BucketName
+          IOT_OUTPUT_TOPIC: !Ref IoTOutputTopic  
+          REGEXP_MATCH: !Ref RegexMatch  
+          IOT_ENDPOINT: !Ref IoTEndpoint
+      Events:
+        Event1:
+          Type: IoTRule
+          Properties:
+            Sql: !Join
+                   - ''
+                   - - "SELECT * FROM "
+                     - "'"
+                     - !Ref IoTInputTopic
+                     - "'"
