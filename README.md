@@ -1,16 +1,8 @@
-<!-- [![Contributors][contributors-shield]][contributors-url] -->
-[![Forks][forks-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/network/members]
-[![Stargazers][stars-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/stargazers]
-[![Issues][issues-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/issues]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/github_username/axis-aws-rekognition-over-secure-mqtt">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+[![made-with-Go](https://img.shields.io/badge/Made%20with-Go-1f425f.svg)](http://golang.org)
+[![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/network/)
+[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/stargazers/)
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
+[![Open Source Love png3](https://badges.frapsoft.com/os/v3/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
   <h3 align="center">Enable the power of AWS Rekognition to your Axis camera</h3>
 
@@ -156,7 +148,8 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 ## Contact
 
-Lezgin Bakircioglu - [@lerra82](https://twitter.com/lerra82)
+Lezgin Bakircioglu - <a href="https://twitter.com/lerra82"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" height=25></a> 
+<a href="https://medium.com/daniel-wellington-tech-stories"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> 
 
 Medium link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
