@@ -1,9 +1,7 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- [![Contributors][contributors-shield]][contributors-url] -->
+[![Forks][forks-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/network/members]
+[![Stargazers][stars-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/stargazers]
+[![Issues][issues-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/issues]
 
 
 
