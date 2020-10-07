@@ -1,9 +1,3 @@
-[![made-with-Go](https://img.shields.io/badge/Made%20with-Go-1f425f.svg)](http://golang.org)
-[![GitHub forks](https://img.shields.io/github/forks/dwtechnologies/axis-aws-rekognition-over-secure-mqtt.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/network/)
-[![GitHub stars](https://img.shields.io/github/stars/dwtechnologies/axis-aws-rekognition-over-secure-mqtt.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/)
-[![GitHub issues](https://img.shields.io/github/issues/dwtechnologies/axis-aws-rekognition-over-secure-mqtt.svg)](https://GitHub.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/issues/)
-[![Open Source Love png3](https://badges.frapsoft.com/os/v3/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
   <h3 align="center">Enable the power of AWS Rekognition to your Axis camera</h3>
 
   <p align="center">
