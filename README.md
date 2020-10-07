@@ -6,6 +6,8 @@
     <br />
     <br />
       <img src="images/scaning-box.jpg" alt="OCR scanning box base on axis camera and aws components">
+    <br />
+    This is the example setup we have, the reason for the light tent is that we want to make sure we always get the same "controlled environment" where it is going to get deployed and the same lighning and reflection (dont underestamate reflections!). We have also a button to trigger the event through the IO port of the camera so we are super cost efficent.
     ·
   </p>
 </p>
