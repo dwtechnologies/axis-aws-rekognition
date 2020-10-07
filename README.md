@@ -130,9 +130,9 @@ Any contributions you make are **greatly appreciated** but please have in mind t
 
 
 ### Pull request wishlist
-*Modular setup to be able to switch between AWS Rekognition OCR & Image detection
-*Fetch the IOT endpoint dynamically in the lambda instead of define it
-*Dynamically in the code to support Other destination to push matched data, such as invoke another lambda, api gateway websocket, dynamodb, kinesis etc. Example of SNS is there
+* Modular setup to be able to switch between AWS Rekognition OCR & Image detection
+* Fetch the IOT endpoint dynamically in the lambda instead of define it
+* Dynamically in the code to support Other destination to push matched data, such as invoke another lambda, api gateway websocket, dynamodb, kinesis etc. Example of SNS is there
 
 ## License
 
