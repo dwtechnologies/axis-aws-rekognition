@@ -1,17 +1,3 @@
-<!-- [![Contributors][contributors-shield]][contributors-url] -->
-[![Forks][forks-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/network/members]
-[![Stargazers][stars-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/stargazers]
-[![Issues][issues-shield]][https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt/issues]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/github_username/axis-aws-rekognition-over-secure-mqtt">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Enable the power of AWS Rekognition to your Axis camera</h3>
 
   <p align="center">
@@ -92,7 +78,7 @@ IoTEndpoint="https://The-AWS-IOT-ENDPOINT"
 ```sh
 RegexMatch=""
 ```
-3. Edit the Make file
+3. Edit the Makefile
 3.1 Set the Artifact S3 bucket that you have permission to upload the lambda artifact to
 ```sh
 ARTIFACTS_BUCKET   =  s3-bucket-to-upload-the-lambda-artifact-for-deploy
@@ -106,7 +92,7 @@ AWS_DEFAULT_REGION ?= eu-west-1
 AWS_PROFILE ?= your-aws-cli-profile
 ```
 
-X. Deploy
+4. Deploy
 ```sh
 make deploy
 ```
@@ -144,9 +130,9 @@ Any contributions you make are **greatly appreciated** but please have in mind t
 
 
 ### Pull request wishlist
-*Modular setup to be able to switch between AWS Rekognition OCR & Image detection
-*Fetch the IOT endpoint dynamically in the lambda instead of define it
-*Dynamically in the code to support Other destination to push matched data, such as invoke another lambda, api gateway websocket, dynamodb, kinesis etc. Example of SNS is there
+* Modular setup to be able to switch between AWS Rekognition OCR & Image detection
+* Fetch the IOT endpoint dynamically in the lambda instead of define it
+* Dynamically in the code to support Other destination to push matched data, such as invoke another lambda, api gateway websocket, dynamodb, kinesis etc. Example of SNS is there
 
 ## License
 
@@ -156,7 +142,8 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 ## Contact
 
-Lezgin Bakircioglu - [@lerra82](https://twitter.com/lerra82)
+Lezgin Bakircioglu - <a href="https://twitter.com/lerra82"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" height=25></a> 
+<a href="https://medium.com/daniel-wellington-tech-stories"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> 
 
 Medium link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
