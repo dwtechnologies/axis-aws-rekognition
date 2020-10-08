@@ -1,10 +1,13 @@
   <h3 align="center">Enable the power of AWS Rekognition to your Axis camera</h3>
+  <h3 align="center"><a href="https://medium.com/daniel-wellington-tech-stories"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> </h3>
 
   <p align="center">
     This proof of concept will enable the power of AWS Rekognition OCR to your Axis camera, with some few changes you can change to the image rekognition. The project it self is based on AWS IOT Core (Secure MQTT with client certificate) instead of the API Gateway (HTTPS endpoint) to get better performance as establishing a HTTPS connection each time is to much overhead and MQTT is meant to be a IOT protocol.
     <br />
     <br />
-    <a href="https://">View Demo</a>
+      <img src="images/scaning-box.jpg" alt="OCR scanning box base on axis camera and aws components">
+    <br />
+    This is the example setup we have, the reason for the light tent is that we want to make sure we always get the same "controlled environment" where it is going to get deployed and the same lighning and reflection (dont underestamate reflections!). We have also a button to trigger the event through the IO port of the camera so we are super cost efficent.
     ·
   </p>
 </p>
@@ -16,11 +19,11 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Deployment on AWS](#Deployment-on-AWS)
-  * [Configure Axis camera](#Configure-Axis-camera)
+  * [Deployment on AWS](#deployment-on-aws)
+  * [Configure Axis camera](#configure-axis-camera)
 * [Usage](#usage)
 * [Contributing](#contributing)
-  * [Pull request wishlist](#Pull-request-wishlist)
+  * [Pull request wishlist](#pull-request-wishlist)
 * [License](#license)
 * [Contact](#contact)
 
@@ -143,9 +146,8 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 ## Contact
 
 Lezgin Bakircioglu - <a href="https://twitter.com/lerra82"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" height=25></a> 
-<a href="https://medium.com/daniel-wellington-tech-stories"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> 
+<a href="https://medium.com/@lerra82"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> 
 
-Medium link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
 
 
