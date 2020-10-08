@@ -32,8 +32,7 @@ Resources:
     Properties:
       Handler: main 
       Runtime: go1.x
-      CodeUri: >-
-        bin/main.zip
+      CodeUri: ./source/deployment.zip
       MemorySize: 128
       Timeout: 10
       Policies:
