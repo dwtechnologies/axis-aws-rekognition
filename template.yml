@@ -30,9 +30,9 @@ Resources:
   AwsLambdaRekonDevRekon:
     Type: 'AWS::Serverless::Function'
     Properties:
-      Handler: main 
+      Handler: main
       Runtime: go1.x
-      CodeUri: ./source/deployment.zip
+      CodeUri: ./src/deployment.zip
       MemorySize: 128
       Timeout: 10
       Policies:

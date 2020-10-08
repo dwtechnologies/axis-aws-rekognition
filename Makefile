@@ -31,7 +31,8 @@ clean:
 	@rm -rf src/deployment.zip template_out.yaml
 
 deploy:
+	make build
 	$(call sam_package)
 	$(call sam_deploy)
-	@rm -rf src/deployment.zip template_out.yaml
-	
+	make clean
+

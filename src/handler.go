@@ -48,7 +48,7 @@ type lambdaConfig struct {
 
 	RegexpMatch  string `env:"REGEXP_MATCH,required"`
 	OutputBucket string `env:"S3_OUTPUT_BUCKET,required"`
-	OutputSNS    string `env:"SNS_OUTPUT_ARN,required"`
+//	OutputSNS    string `env:"SNS_OUTPUT_ARN,required"`
 }
 
 // This is the filename generator for s3
