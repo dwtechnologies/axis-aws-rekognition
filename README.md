@@ -7,7 +7,7 @@
     <br />
       <img src="images/scaning-box.jpg" alt="OCR scanning box base on axis camera and aws components">
     <br />
-    This is the example setup we have, the reason for the light tent is that we want to make sure we always get the same "controlled environment" where it is going to get deployed and the same lighning and reflection (dont underestamate reflections!). We have also a button to trigger the event through the IO port of the camera so we are super cost efficent.
+    This is the example setup we have, the reason for the light tent is that we want to make sure we always get the same "controlled environment" where it is going to get deployed and the same lighning and reflection (dont underestamate reflections!). We have also a button to trigger the event through the IO port of the camera so we are super cost efficent. The result from Rekognition service and the image sent is stored on S3 for debugging reasons and will be automatically deleted after defined period.
     ·
   </p>
 </p>
@@ -122,7 +122,7 @@ The image taken from the camera should be triggered (motion, button or something
 
 ## Contributing
 
-Any contributions you make are **greatly appreciated** but please have in mind to make what you create must be modular to not break current use case
+Any contributions you make are **greatly appreciated** but please have in mind to make what you create must be dynamic to not break current use case
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -132,7 +132,7 @@ Any contributions you make are **greatly appreciated** but please have in mind t
 
 
 ### Pull request wishlist
-* Modular setup to be able to switch between AWS Rekognition OCR & Image detection
+* Dynamic setup to be able to switch between AWS Rekognition OCR & Object/Scene rekognition
 * Fetch the IOT endpoint dynamically in the lambda instead of define it
 * Dynamically in the code+cloudformation to support Other destination to push matched data, such as invoke another lambda, api gateway websocket, dynamodb, kinesis etc. Example of SNS is there
 
