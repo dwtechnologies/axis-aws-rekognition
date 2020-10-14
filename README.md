@@ -1,7 +1,7 @@
   <h3 align="center">Enable the power of AWS Rekognition to your Axis camera</h3>
   <h3 align="center"><a href="https://medium.com/daniel-wellington-tech-stories"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> </h3>
 
-  <p align="center">
+<p align="center">
     This proof of concept will enable the power of AWS Rekognition OCR to your Axis camera, with some few changes you can change to the object rekognition. The project it self is based on AWS IOT Core (Secure MQTT with client certificate) instead of the API Gateway (HTTPS endpoint) to get better performance as establishing a HTTPS connection each time is to much overhead and MQTT is meant to be a IOT protocol. Read more about this use case in the medium link above.
     <br />
     <br />
@@ -12,14 +12,10 @@
     <br />
     <br />
         <img src="images/diagram.png" alt="The architecture diagram">
-      <br />
+    <br />
     <br />
 
   The camera runs a ACAP that takes care of sending the data over secure mqtt (AWS IoT Core) together with the image base64 encoded in a json object. The IoT rule triggers the lambda with the json object to process the data and trigger rekognition service. The result from Rekognition service and the image sent is stored on S3 for debugging reasons and will be automatically deleted after defined period. The lambda it self will take the matched regexp result to put back on AWS IOT Core.
-    <br />
-    <br />
-    ·
-  </p>
 </p>
 
 
