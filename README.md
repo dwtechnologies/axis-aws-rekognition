@@ -2,7 +2,7 @@
   <h3 align="center"><a href="https://medium.com/daniel-wellington-tech-stories"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> </h3>
 
   <p align="center">
-    This proof of concept will enable the power of AWS Rekognition OCR to your Axis camera, with some few changes you can change to the object rekognition. The project it self is based on AWS IOT Core (Secure MQTT with client certificate) instead of the API Gateway (HTTPS endpoint) to get better performance as establishing a HTTPS connection each time is to much overhead and MQTT is meant to be a IOT protocol.
+    This proof of concept will enable the power of AWS Rekognition OCR to your Axis camera, with some few changes you can change to the object rekognition. The project it self is based on AWS IOT Core (Secure MQTT with client certificate) instead of the API Gateway (HTTPS endpoint) to get better performance as establishing a HTTPS connection each time is to much overhead and MQTT is meant to be a IOT protocol. Read more about this use case in the medium link above.
     <br />
     <br />
       <img src="images/scaning-box.jpg" alt="OCR scanning box base on axis camera and aws components">
