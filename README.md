@@ -2,7 +2,7 @@
   <h3 align="center"><a href="https://medium.com/daniel-wellington-tech-stories"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> </h3>
 
   <p align="center">
-    This proof of concept will enable the power of AWS Rekognition OCR to your Axis camera, with some few changes you can change to the image rekognition. The project it self is based on AWS IOT Core (Secure MQTT with client certificate) instead of the API Gateway (HTTPS endpoint) to get better performance as establishing a HTTPS connection each time is to much overhead and MQTT is meant to be a IOT protocol.
+    This proof of concept will enable the power of AWS Rekognition OCR to your Axis camera, with some few changes you can change to the object rekognition. The project it self is based on AWS IOT Core (Secure MQTT with client certificate) instead of the API Gateway (HTTPS endpoint) to get better performance as establishing a HTTPS connection each time is to much overhead and MQTT is meant to be a IOT protocol.
     <br />
     <br />
       <img src="images/scaning-box.jpg" alt="OCR scanning box base on axis camera and aws components">
@@ -49,7 +49,6 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple steps (tested on linux but should work fine on mac, windows guys, you are on your own) to deploy.
 
 ### Prerequisites
 
@@ -64,7 +63,7 @@ The following needs to be on your machine to be able to deploy
 
 1. Clone the repo
 ```sh
-git clone https://github.com/dwtechnologies/axis-aws-rekognition-over-secure-mqtt.git
+git clone https://github.com/dwtechnologies/axis-aws-rekognition.git
 ```
 2. Edit parameters file 
 2.1 Define the topics, the input topic must match the same as on the axis camera
@@ -123,7 +122,7 @@ The image taken from the camera should be triggered (motion, button or something
 
 ## Contributing
 
-Any contributions you make are **greatly appreciated** but please have in mind to make what you create modular to not break current use case
+Any contributions you make are **greatly appreciated** but please have in mind to make what you create must be modular to not break current use case
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -135,7 +134,7 @@ Any contributions you make are **greatly appreciated** but please have in mind t
 ### Pull request wishlist
 * Modular setup to be able to switch between AWS Rekognition OCR & Image detection
 * Fetch the IOT endpoint dynamically in the lambda instead of define it
-* Dynamically in the code to support Other destination to push matched data, such as invoke another lambda, api gateway websocket, dynamodb, kinesis etc. Example of SNS is there
+* Dynamically in the code+cloudformation to support Other destination to push matched data, such as invoke another lambda, api gateway websocket, dynamodb, kinesis etc. Example of SNS is there
 
 ## License
 
@@ -147,25 +146,3 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 Lezgin Bakircioglu - <a href="https://twitter.com/lerra82"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" height=25></a> 
 <a href="https://medium.com/@lerra82"><img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=25></a> 
-
-
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=flat-square
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=flat-square
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=flat-square
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=flat-square
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=flat-square
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
-[product-screenshot]: images/screenshot.png
