@@ -7,10 +7,16 @@
     <br />
       <img src="images/scaning-box.jpg" alt="OCR scanning box base on axis camera and aws components">
     <br />
+    <br />
     This is the example setup we have, the reason for the light tent is that we want to make sure we always get the same "controlled environment" where it is going to get deployed and the same lighning and reflection (dont underestamate reflections!). We have also a button to trigger the event through the IO port of the camera so we are super cost efficent. 
     <br />
+    <br />
         <img src="images/diagram.png" alt="The architecture diagram">
+      <br />
+    <br />
+
   The camera runs a ACAP that takes care of sending the data over secure mqtt (AWS IoT Core) together with the image base64 encoded in a json object. The IoT rule triggers the lambda with the json object to process the data and trigger rekognition service. The result from Rekognition service and the image sent is stored on S3 for debugging reasons and will be automatically deleted after defined period. The lambda it self will take the matched regexp result to put back on AWS IOT Core.
+    <br />
     <br />
     ·
   </p>
